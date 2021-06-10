@@ -1,0 +1,106 @@
+*   {
+    box-sizing: border-box;
+}
+a:link {
+    text-decoration: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    color: #EDE5E2;
+    background: url('../images/background.png') no-repeat;
+    background-size: cover;
+    font-family: 'Merriweather', serif;
+}
+.return {
+    width: 50px!important;
+    height: 50px!important;
+    position: fixed;
+    top: 88%;
+    left: 2%;
+    text-align: center;
+    background: #302E2B;
+    border: 1px solid #fff;
+    font-size: 2.5em;
+    line-height: 50px;
+    color: #fff;
+    transition: 2s;
+    box-sizing: content-box;
+}
+.return:hover {
+    background:#5D5852;
+    color: #BED6E0;
+    transition: 2s;
+}
+#totalcontent {
+    width: 35%;
+    height: 50%;
+    display: flex;
+    margin: 0 auto;
+    background: #5d5852;
+    align-items: center;
+    flex-direction: column;
+}
+.title {
+    width: 582px;
+    height: 50px;
+    display: block;
+    margin: 20px auto 0 auto;
+    text-align: center;
+    letter-spacing: 15px;
+    font-size: 1.7em;
+    font-weight: 300;
+}
+#board {
+    box-sizing: content-box;
+    width: 480px;
+    height: 480px;
+    margin: 40px auto;
+    display: flex;
+    background: url('../images/background-board.jpg') no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(41, 49, 56);
+    border-left: 5px solid #5D5852;
+    border-bottom: 5px solid #5D5852;
+    border-top: 5px solid #8f8a83;
+    border-right: 5px solid #8f8a83;
+    flex-flow: column-reverse wrap;
+    outline: 25px solid #302e2b;
+}
+.whitefield, .blackfield {
+     width: 60px;
+     height: 60px;
+     display: flex;
+     border: 1px solid rgb(41, 49, 56);
+     font-size: 0.5em;
+     color:slategray;
+}
+.whitefield:hover, .blackfield:hover {
+    background: #e1e8b4;
+}
+.whitefield {
+    background: rgba(171, 205, 221, 0.7);
+}
+.blackfield { 
+    background: rgb(25, 67, 92, 0.7);
+}
+.piece {
+    width: 35px;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+}
+input {
+    width: 150px;
+    height: 40px;
+    margin-bottom: 10px;
+    display: block;
+    background: #302e2b;
+    border: 1px solid #837f7e;
+    outline: unset;
+    cursor: pointer;
+    color: #EDE5E2;
+}
+input:hover {
+    background: #44413c;
+}
